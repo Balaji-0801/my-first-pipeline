@@ -1,9 +1,14 @@
 trigger:
-- main
+- main   # or your branch name
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
 
 steps:
+# Step 1: Run app.js
 - script: node app.js
   displayName: 'Run app.js'
+
+# Step 2: Run app1.js
+- script: node app1.js
+  displayName: 'Run app1.js'
