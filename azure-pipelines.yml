@@ -5,6 +5,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+# Checkout repo
+- checkout: self
+
 # Step 1: Run app.js
 - script: node app.js
   displayName: 'Run app.js'
